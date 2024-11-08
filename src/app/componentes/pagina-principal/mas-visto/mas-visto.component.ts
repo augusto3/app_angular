@@ -8,7 +8,7 @@ import { Producto } from 'src/app/core/interfaz/producto';
   templateUrl: './mas-visto.component.html',
   styleUrls: ['./mas-visto.component.css'],
   standalone:true,
-  imports:[NgIf, RouterLink],
+  imports:[],
 })
 export class MasVistoComponent implements OnInit{
   private masVendidos:Producto[]=[];

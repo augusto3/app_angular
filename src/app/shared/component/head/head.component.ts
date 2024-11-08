@@ -1,4 +1,4 @@
-import { NgFor, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, inject, NO_ERRORS_SCHEMA, OnInit} from '@angular/core';
 import { FormGroup,FormsModule } from '@angular/forms';
 import { Router, RouterLink, RouterLinkActive} from '@angular/router';
@@ -12,7 +12,7 @@ const USER = 'user';
   templateUrl: './head.component.html',
   styleUrls: ['./head.component.css'],
   standalone:true,
-  imports:[NgIf, NgFor, RouterLink,RouterLinkActive, FormsModule, CarritoComponent]
+  imports:[NgIf, RouterLink,RouterLinkActive, FormsModule, CarritoComponent]
 })
 export class HeadComponent implements OnInit{
   public formCarga!:FormGroup;

@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
   styleUrls:['./layout-user.component.css'],
   templateUrl: './layout-user.component.html',
   standalone:true,
-  imports:[RouterModule,NgIf]
+  imports:[RouterModule]
 })
 export class LayoutUserComponent {
 }

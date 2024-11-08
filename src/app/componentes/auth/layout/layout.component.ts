@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { RegistrarseComponent } from '../registrarse/registrarse.component';
-import { InicioComponent } from '../inicio/inicio.component';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,7 +6,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.css'],
   standalone:true,
-  imports:[RegistrarseComponent,InicioComponent, RouterOutlet, RouterLink,RouterLinkActive]
+  imports:[ RouterOutlet, RouterLink,RouterLinkActive]
 })
 export class LayoutComponent{
   loginActive():boolean{

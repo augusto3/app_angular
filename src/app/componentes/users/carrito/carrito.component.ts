@@ -1,7 +1,6 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Producto } from 'src/app/core/interfaz/producto';
-import { fun } from 'src/app/core/functions/fun';
 import { cartService } from 'src/app/core/service/cart.service';
 @Component({
   selector: 'app-carrito',
