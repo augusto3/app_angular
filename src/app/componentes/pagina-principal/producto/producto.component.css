@@ -1,0 +1,109 @@
+.back{
+  color: black;
+  cursor: pointer;
+  display:inline-flex;
+  margin: 5px;
+}
+.white-block{
+  display: block;
+  margin: 30px;
+  background-color: white;
+  border-radius: 20px;
+}
+.titulo{
+  position: static;
+  display: block;
+  text-transform: capitalize;
+  font-size:3.3em;
+  padding: 20px;
+  margin: 10px;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+.for-small{
+  margin: 10px 20px 10px 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(201, 143, 143, 0.11);
+  border: 1px solid rgb(162, 162, 162);
+  border-radius: 5px;
+}
+.for-small:hover{
+  filter: brightness(0.9);
+  background-image: rgba(128, 128, 128, 0.233);
+}
+.imagen{
+  margin: 20px;
+  width: 400px;
+  height: 400px; 
+}
+.producto{
+  width: 50%;
+}
+.precio{
+  font-size: 24px;
+  font-weight: bold;
+}
+p::first-letter{
+  text-transform: uppercase;
+}
+.flex{
+  display: flex;
+}
+.cantidad{
+  padding: 0px;
+  width: 80px;
+  height: 20px;
+  margin: auto 0;
+}
+option{
+  border-radius: 0px;
+  border:0 solid rgb(199, 198, 198);
+}
+.descripcion{ 
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+.cart{
+  background-color: cadetblue;
+  padding: 10px;
+  border: 0px;
+  margin: 20px;
+}
+.cart:hover{
+  background-color:aquamarine;
+}
+@media ((max-width:860px) and (min-width:760px)){
+  .imagen{
+    margin: 20px;
+    width: 300px;
+    height: 300px; 
+  }
+}
+@media(max-width:760px){
+  .imagen{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+  .for-small{
+    width: 10%;
+  }
+  .container{
+    display: block;
+  }
+  .producto{
+    display: block;
+    width: 90%;
+    margin: 10%;
+  }
+  .white-block{
+    display: block;
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px;
+  }
+}

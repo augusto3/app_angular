@@ -1,0 +1,17 @@
+<div class="contenedor carousel">
+    <h2 class="mas-ven">Mas Vendidos</h2>
+    <button (click)="decrementar()" class="carousel-arrow carousel-arrow-left">&lt;</button>
+        <a href="product/{{id}}">
+            <h3 class="title">{{title}}</h3>
+            <div class="display">
+                <div class="block">
+                    <img [src]="imagen" alt="image" class="imagen" >
+                </div>
+                <div class="block none">
+                    <p class="text">{{descripcion}}</p>
+                    <p class="precio" >${{precio}} </p>
+                </div>
+            </div>
+        </a>
+    <button (click)="incrementar()" class="carousel-arrow carousel-arrow-right">&gt;</button>
+</div>

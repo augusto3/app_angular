@@ -1,0 +1,41 @@
+.imagen{
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+.tamaño{
+    width: 200px;
+    height: 300px;
+}
+.titulo{
+    height: 40px;
+    text-align: center;
+    font-size:30px;
+}
+.conteiner{
+    width: 200px;
+    height: 30px;
+    display: block;
+    justify-content: space-around;
+    position:relative;
+    display: inline-flex;
+}
+.precio{
+    text-align: center;
+    position: relative;
+    top:0px;
+    margin:0px;
+    margin-top: 5px;
+}
+.boton-comprar{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 80px;
+    height: 30px;
+}
+a{
+    list-style-type:none;
+    color:black;
+    text-decoration: none;
+}

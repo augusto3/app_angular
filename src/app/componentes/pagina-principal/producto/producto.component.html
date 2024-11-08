@@ -1,0 +1,35 @@
+<a (click)="back()" class="back">
+	<img loading="lazy" src="../assets/arrow_back_ios.svg"><h3>HOME</h3>
+</a>
+<div class="white-block">
+	<h3 class="titulo">{{title}}</h3>
+	<div class="container">
+		<div *ngFor="let image of images;let indice =index">
+			<div (mouseover)="changeImage(image)" (mouseleave)="backImage()" (click)="changeImage(images[indice])">
+				<a href=""></a><img loading="lazy" class="for-small" [src]="image" alt="">
+			</div>
+		</div>
+		<div class="imagen">
+			<img loading="lazy" [src]="currentImage" class="imagen" >
+		</div>
+		<div class="producto">
+			<div class="flex">
+				<p>Talle: </p><p>{{talla}}</p>
+			</div>
+			<div class="flex">
+				<p>Color: </p><p>{{colors}}</p>
+			</div>
+			<div class="flex">
+				<p>Cantidad:   </p>
+				<select [(ngModel)]="count" class="cantidad" name="cantidad">
+					<option *ngFor="let number of cantidad" [value]="number"> {{number}} unidad</option>
+				</select>
+			</div>
+			<div class="flex"> 
+				<p class="precio">Precio: $ {{count*precio}}</p>
+			</div>
+			<p class="descripcion">{{descripcion}}</p>
+			<button class="cart" (click)="addProducto()">añadir al carrito</button>
+		</div>
+	</div>
+</div>

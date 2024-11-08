@@ -1,0 +1,71 @@
+.contenedor{
+    width: 100%;
+    display: block;
+    margin: 50px 0px 50px 0px;
+}
+.white{
+    background-color: white;
+}
+.inline{
+    width: 100%;
+    display: flex;
+}
+.titulo{
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.boton-pos{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+.boton-style{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 40%;
+    height: 60px;
+    font-size: 30px;
+    padding: auto;
+    margin: 20px;
+}
+.boton{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    font-size: 20px;
+    width: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+.boton:hover{
+    background-color: lightgray;
+}
+.boton-style:hover{
+    background-color: lightgray;
+}
+.boton-1{
+    right: 30px;
+}
+.boton-2{
+    right: 10px;
+}
+h2{
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+.producto{
+    display: inline-flex;
+    width: 250px;
+    height: 320px;
+    background-color: white;
+    margin:20px;
+    padding: 10px;
+    border-radius: 10px;
+    flex:auto;
+}

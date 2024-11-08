@@ -1,0 +1,23 @@
+<form (ngSubmit)="onEnviar()" [formGroup]="formCarga">
+    <label>Username</label>
+    <input formControlName="email" [ngClass]="{'is-invalid':Email?.errors && Email?.touched,'is-valid':!Email?.errors && !Email?.touched}" type="text" placeholder="Email" name="uname" required="true" autocomplete="true">
+    <div *ngIf="Email?.errors && Email?.touched " >
+        <p *ngIf="Email?.hasError('email')"class="text-center row col-6 p-0 m-auto">
+            El email es incorrecto, escrive el email correcto. ej.example&#64;hotmail.com
+        </p>
+        <p *ngIf="Email?.hasError('required')"class="text-center row col-6 p-0 m-auto">
+            El email es requerido
+        </p>
+    </div>
+    <label>Password</label> 
+    <input formControlName="password" [ngClass]="{'is-invalid':Password?.errors && Password?.touched,'is-valid':!Password?.errors && !Password?.touched}" type="password" placeholder="Password" name="psw" required="true" autocomplete="true" >
+    <div *ngIf="Password?.errors && Password?.touched " > 
+        <p *ngIf="Password?.hasError('required')"class="text-center row col-6 p-0 m-auto">
+            La contraseña es requerido
+        </p>
+        <p *ngIf="Password?.hasError('minlength')"class="text-center row col-6 p-0 m-auto">
+            La contraseña debe tener 8 caractares
+        </p>
+    </div>
+    <button (click)="onEnviar()" type="submit" class="btn">login</button>
+</form>

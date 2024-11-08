@@ -1,0 +1,14 @@
+<div class="contenedor white">
+    <div class="inline">
+        <h2 class="titulo">{{titulo}} </h2>
+        <button class="boton boton-1" [disabled]="disable0()" (click)="left()">&lt;</button>
+        <button class="boton boton-2" [disabled]="disableMax()" (click)="right()">&gt;</button> 
+    </div>
+</div>
+<div *ngFor="let ropa of dato" class="producto">
+    <app-vista style="margin: auto;" [producto]="ropa"></app-vista>
+</div>
+<div class="boton-pos">
+    <button class="boton-style" [disabled]="disable0()" (click)="left()">&lt;</button>
+    <button class="boton-style" [disabled]="disableMax()" (click)="right()" >&gt;</button> 
+</div>

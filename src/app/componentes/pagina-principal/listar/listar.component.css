@@ -1,0 +1,94 @@
+.contenedor{
+    width: 100%;
+    display: block;
+}
+.white{
+    background-color: var(--background-box);
+}
+.inline{
+    width: 100%;
+    display: flex;
+}
+.titulo{
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.boton-pos{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+.boton-style{
+    background-color: var(--buton-black);
+    cursor: pointer;
+    color: var(--color-white);
+    width: 40%;
+    height: 60px;
+    font-size: 30px;
+    margin: 20px;
+    border: 0px;
+}
+.boton-style:hover{
+    color: black;
+    background: radial-gradient(circle, rgba(200,200,200,1) 0%,rgba(160,160,160,1) 20%, rgba(120,120,120,1) 40%, rgba(100,100,100,1) 60%, rgb(75,75,75,1) 80%, var(--buton-black) 100%);
+}
+.boton-style:disabled{
+    color: white;
+    background: var(--buton-black-efect);
+    cursor:default;
+}
+.boton-style:disabled:hover{
+    color: white;
+    background: var(--buton-black-efect);
+    cursor:default;
+}
+.boton{
+    background-color: var(--buton-black);
+    border: 0px;
+    color: var(--color-white);
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    font-size: 20px;
+    width: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+.boton:hover{
+    color: black;
+    background-color: var(--buton-black-efect);
+}
+.boton:disabled{
+    color: white;
+    background-color: var(--buton-black-efect);
+    cursor:default;
+}
+.boton:disabled:hover{
+    color: white;
+    background-color: var(--buton-black-efect);
+    cursor:default;
+}
+.boton-1{
+    right: 30px;
+}
+.boton-2{
+    right: 10px;
+}
+h2{
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+.producto{
+    display: inline-flex;
+    width: 250px;
+    height: 320px;
+    background-color: var(--background-box);
+    margin:20px;
+    padding: 10px;
+    border-radius: 10px;
+    flex:auto;
+}

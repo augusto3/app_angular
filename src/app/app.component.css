@@ -1,0 +1,36 @@
+.todo{
+    position:relative;
+    min-height: 100%;
+    padding-bottom: 30vh;
+}
+header{
+    width: auto;
+    height: auto;
+}
+footer{
+    width: auto;
+    height: auto;
+}
+.parrafo{
+    background-color: rgb(211, 211, 67);
+    color: rgb(109, 109, 1);
+    border: solid 2px rgb(109, 109, 1);
+    width: auto;
+    height: 20px;
+    margin: 0px;
+    text-align: center;
+}
+.size{
+    color: rgb(109, 109, 1);
+    width: 10px;
+    height: 10px;
+}
+main{
+    max-height: 100%;
+    width: 100%;
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+}

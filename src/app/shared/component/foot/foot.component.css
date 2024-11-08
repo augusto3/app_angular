@@ -1,0 +1,33 @@
+.container{
+    position:static;
+    background-color: var(--primary);
+    width: auto;
+    height: 35%;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    height: 14%;
+    width: 100%;
+    margin: 0px;
+    justify-content: center;
+    display: flex;
+    border-top: 2px solid var(--primary-bording);
+}
+li{
+    margin:auto;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+li:hover{
+    background-color: var(--primary-efect);
+}
+p{
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    height: 7%;
+    margin: auto;
+    border-top: 2px solid var(--primary-bording);
+}

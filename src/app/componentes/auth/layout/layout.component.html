@@ -1,0 +1,9 @@
+<div class="componente">
+    <div class="conteiner">
+        <button class="middle b1" routerLink="login"  [disabled]="loginActive()" routerLinkActive="active"><h2>iniciar session</h2></button>
+        <button class="middle b2" routerLink="sign" [disabled]="signActive()" routerLinkActive="active"><h2>registrarse</h2></button>
+    </div>
+    <div class="pad">
+        <router-outlet></router-outlet>
+    </div>
+</div>
