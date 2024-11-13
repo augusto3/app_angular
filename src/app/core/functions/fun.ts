@@ -4,24 +4,6 @@ const DATOS="productos";
 const USER="user";
 const ORDEN="ordenDeCompra";
 export class fun{
-    static incrementar(indice:number,long:number):number{
-        if(indice!=long-1){
-            indice++;
-        }
-        else{
-            indice=0;
-        }
-        return indice;
-    }
-    static decrementar(indice:number,long:number):number{
-        if(indice!=0){
-            indice--;
-        }
-        else{
-            indice=long-1;
-        }
-        return indice;
-    }
     static isId(datos:Producto[],id:string):number{
         for(let i=0;i<datos.length;i++){
             if(datos[i].id==id){

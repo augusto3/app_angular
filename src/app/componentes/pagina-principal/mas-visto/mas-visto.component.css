@@ -2,47 +2,42 @@
   height: 500px;
   background-color: var(--background-box);
   border-radius: 20px;
-  margin-top: 40px;
-  margin-left:40px ;
-  margin-right: 40px;
+  margin: 60px;
+  padding: 0 20px;
   position: relative;
   overflow: hidden;
 }
 .mas-ven{
   font-size: 30px;
-  padding-left: 20px;
-  padding-top: 0px;
-  margin: 15px;
   text-transform: uppercase;
   font-size: xx-large;
   text-decoration: underline;
 }
-.carousel-arrow {
-  position: absolute;
-  background-color: var(--buton-black);
-  color: var(--color-white);
-  border: none;
-  padding: 10px;
-  font-size: 30px;
-  cursor: pointer;
-  display: block;
+.slider {
+  display: flex;
+  width: 100%;
+  height: 430px;
+  overflow: visible;
 }
-.carousel-arrow:hover{
-  color: black;
-  background-color: var(--buton-black-efect);
+.slider{
+  animation: cambia 15s infinite alternate linear;
 }
-@media(max-width:400px){
-  .carousel-arrow {
-    display: none;
-  }
+.slider .producto {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit:fill;
 }
-.carousel-arrow-left {
-  left: 30px;
-  top: 220px;
-}
-.carousel-arrow-right {
-  right: 30px;
-  top: 220px;
+@keyframes cambia{
+  0% {margin-left: 0;}
+  19%{margin-left: 0;}
+  22%{margin-left: -100%;}
+  41%{margin-left: -100%;}
+  44%{margin-left: -200%;}
+  63%{margin-left: -200%;}
+  66%{margin-left: -300%;}
+  87%{margin-left: -300%;}
+  90%{margin-left: -400%;}
+  100%{margin-left: -400%;}
 }
 .title{
   margin: 10px;
@@ -59,10 +54,10 @@
 }
 .imagen{
   align-items: center;
-  width: 350px;
-  height: 350px;
-  margin-left: 50px;
-  margin-right: 20px;
+  width: 320px;
+  height: 320px;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 @media(max-width:580px){
   .contenedor{

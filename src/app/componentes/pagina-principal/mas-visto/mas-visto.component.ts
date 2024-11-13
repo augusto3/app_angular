@@ -1,6 +1,5 @@
-import { NgIf } from '@angular/common';
+import { NgFor, NgIf} from '@angular/common';
 import { Component, OnInit} from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { fun } from 'src/app/core/functions/fun';
 import { Producto } from 'src/app/core/interfaz/producto';
 @Component({
@@ -8,10 +7,10 @@ import { Producto } from 'src/app/core/interfaz/producto';
   templateUrl: './mas-visto.component.html',
   styleUrls: ['./mas-visto.component.css'],
   standalone:true,
-  imports:[],
+  imports:[NgFor],
 })
 export class MasVistoComponent implements OnInit{
-  private masVendidos:Producto[]=[];
+  public masVendidos:Producto[]=[];
   public long:number=0;
   public indice:number=0;
   public imagen:string[]=[];
@@ -31,25 +30,9 @@ export class MasVistoComponent implements OnInit{
         }
       }
       this.long=this.masVendidos.length;
-      this.inicializar();
     }
     else{
       console.log("error")
     }
-  }
-  inicializar(){
-    this.id=this.masVendidos[this.indice].id;
-    this.imagen=this.masVendidos[this.indice].images;
-    this.title =this.masVendidos[this.indice].title;
-    this.descripcion =this.masVendidos[this.indice].descripcion;
-    this.precio =this.masVendidos[this.indice].precio;
-  }
-  incrementar(){
-    this.indice = fun.incrementar(this.indice,this.long);
-    this.inicializar();
-  }
-  decrementar(){
-    this.indice =fun.decrementar(this.indice,this.long);
-    this.inicializar();
   }
 }

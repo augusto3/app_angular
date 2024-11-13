@@ -1,7 +1,7 @@
 .todo{
     position:relative;
     min-height: 100%;
-    padding-bottom: 30vh;
+    padding-bottom: 135px;
 }
 header{
     width: auto;
@@ -12,7 +12,7 @@ footer{
     height: auto;
 }
 .parrafo{
-    background-color: rgb(211, 211, 67);
+    background-color: #fff52D;
     color: rgb(109, 109, 1);
     border: solid 2px rgb(109, 109, 1);
     width: auto;

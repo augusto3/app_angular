@@ -1,15 +1,17 @@
 *{
-    --background: #00000010;
+    --background: rgb(200, 255, 200);
     --background-box: #ffffff;
-    --primary: rgb(70, 255, 70);
-    --primary-efect:rgb(130, 255, 130);
-    --primary-bording: rgb(0,128,0);
-    --buton: rgb(75, 255, 75);
-    --buton-efect:rgb(0,255,0);
-    --buton-black:#000000af;
-    --buton-black-efect:rgba(0, 0, 0, 0.3);
+    --primary: rgb(0, 80, 0);
+    --primary-efect:rgb(0, 117, 0);
+    --primary-bording: rgb(0, 190, 0);
+    --buton: rgb(0, 100, 0);
+    --buton-efect:rgb(0, 80, 0);
+    --buton-black:rgb(0, 0, 0);
+    --buton-black-efect:rgb(163, 163, 163);
     --buton-bording:black;
     --color-white:#ffff;
+    --primary-text: rgb(200, 255, 200);
+    --secundary-text:black;
 }
 html{
     width: 100%;
@@ -27,3 +29,16 @@ body {
     font-family: "Roboto", "Helvetica Neue", sans-serif;
     background-color: var(--background);
 }
+@keyframes pulse{
+    from{
+        scale: 1;
+        background-color: var(--background-box);
+    }
+    to{
+        border: 1px solid rgb(192, 192, 192);
+        border-radius: 20px;
+        background-color: var(--background-box);
+        box-shadow:3px 3px 3px rgb(134, 134, 134); 
+        scale: 1.1;
+    }
+}  

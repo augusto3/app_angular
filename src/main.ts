@@ -1,7 +1,7 @@
 import { provideRouter } from '@angular/router';
 import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
 import { provideAnimations } from '@angular/platform-browser/animations';
-import { routes} from './app/app.routes' 
+import { routes} from './app/app.routes';
 import { AppComponent } from './app/app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { importProvidersFrom } from '@angular/core';
@@ -10,7 +10,7 @@ import { provideFirebaseApp } from '@angular/fire/app';
 import { initializeAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getStorage, provideStorage } from '@angular/fire/storage';
-import { firebaseConfig} from "src/enviroment/enviroment"
+import { firebaseConfig} from "src/enviroment/enviroment";
 bootstrapApplication(AppComponent,{
   providers:[
     provideAnimations(),

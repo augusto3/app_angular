@@ -1,15 +1,6 @@
 <div class="carousel">
     <h2>Lista de recomendaciones</h2>
-    <button class="carousel-arrow carousel-arrow-left" (click)="baja()">
-        &lt;
-    </button>
     <div class="conteiner">
-        <app-vista class="n0 producto" [producto]="producto0"></app-vista>
-        <app-vista class="n1 producto" [producto]="producto1"></app-vista>
-        <app-vista class="n2 producto" [producto]="producto2"></app-vista>
-        <app-vista class="n3 producto" [producto]="producto3"></app-vista>
-    </div>
-    <button class="carousel-arrow carousel-arrow-right" (click)="sube()">
-        &gt;
-    </button>
+        <app-vista *ngFor="let ropa of productos" class="producto" [producto]="ropa"></app-vista>
+    <div>
 </div>
