@@ -100,3 +100,6 @@ h2{
     padding:30px;
     border-radius: 10px;
 }
+.producto:hover{
+    animation: pulse-big 100ms both linear;
+}
